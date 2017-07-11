@@ -2,18 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
     <title>Dashboard</title>
   </head>
   <body>
   
-  	<h1> Dashboard </h1>
+  	<div class="body-container">
 
-  	<div class="rand-gen-container">
- 	  <h3>Random Number Generator</h3>
-  	  <p><a href="/execute-script">Click here to execute the script.</a></p>
-  	  {% if rand_int %}
-  	  <p>Random Number Generated: {{ rand_int }}</p>
-  	  {% endif %}
+  	  <h1> Dashboard </h1>
+
+      <div class="widget-container">
+
+  	    <div class="rand-num-container">
+ 	      <h3>Random Number Generator</h3>
+  	      <p><a href="/random-int">Click here to generate a random Integer.</a></p>
+  	      {% if rand_int %}
+  	      <p>Random Number Generated: {{ rand_int }}</p>
+  	      {% endif %}
+  	    </div>
+
+        <div class="web-api-container">
+          <h3>Web API Actions</h3>
+          <p><a href="/web-api">Click here to perform a GET request.</a></p>
+          {% if get_req %}
+          <p>The GET request returned: {{ get_req }}</p>
+          {% endif %}
+        </div>
+
+  	  </div>
+
   	</div>
 
   </body>

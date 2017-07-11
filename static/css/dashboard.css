@@ -1,0 +1,23 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+.body-container {
+	margin-left: 40px;
+}
+
+.widget-container {
+	float: left;
+	width: 100%;
+}
+
+.rand-num-container {
+	float: left;
+	margin-right: 40px;
+}
+
+.web-api-container {
+	float: left;
+}

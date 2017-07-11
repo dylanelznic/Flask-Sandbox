@@ -1,9 +1,9 @@
 class BaseConfig(object):
 	SECRET_KEY = 'dummy_key'
-	DEBUG = False
+	DEBUG = 0
 
 class DevConfig(BaseConfig):
-	DEBUG = True
+	DEBUG = 1
 
 class ProdConfig(BaseConfig):
-	DEBUG = False
+	DEBUG = 0
