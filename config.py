@@ -1,4 +1,5 @@
 class BaseConfig(object):
+	SECRET_KEY = 'dummy_key'
 	DEBUG = False
 
 class DevConfig(BaseConfig):

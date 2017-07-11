@@ -8,7 +8,13 @@
   
   	<h1> Dashboard </h1>
 
-  	<p><a href="/execute-script">Click here to execute the script.</p>
+  	<div class="rand-gen-container">
+ 	  <h3>Random Number Generator</h3>
+  	  <p><a href="/execute-script">Click here to execute the script.</a></p>
+  	  {% if rand_int %}
+  	  <p>Random Number Generated: {{ rand_int }}</p>
+  	  {% endif %}
+  	</div>
 
   </body>
 </html>
